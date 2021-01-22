@@ -64,8 +64,8 @@ header .header__nav--flex-container ul {
     line-height: 3rem;
     width: 100px;
 }
-a {
-    text-decoration: none;
+.header__nav--flex-container a {
+    /* text-decoration: none; */
     color: white;
 }
 
@@ -76,5 +76,133 @@ a {
 }
 
 .header__nav--flex-container li:hover {
+    text-decoration: underline;
+}
+
+.login {
+    background: linear-gradient(90deg, hsla(111, 100%, 83%, 1) 0%, hsla(173, 71%, 47%, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 0px;
+    min-height: calc(100vh - 200px);
+}
+
+.login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 40px 48px 30px;
+    min-height: 700px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form label {
+    font-size: 14px;
+}
+
+.login__container--remember-me {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login__container--remember-me a {
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.login__container--remember-me a:hover {
+    text-decoration: underline;
+}
+
+.login__container--social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.login__container--social-media > div > img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.login__container--register {
+    font-size: 1.4rem;
+}
+
+.login__container--register a {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login__container--register a:hover {
+    text-decoration: underline;
+}
+
+.input {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-size: 1.6rem;
+    font-family: fantasy;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+
+::placeholder {
+    color: white;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: fantasy;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(90deg, hsla(111, 100%, 83%, 1) 0%, hsla(173, 71%, 47%, 1) 100%);
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover {
     text-decoration: underline;
 }
