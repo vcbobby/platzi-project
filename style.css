@@ -191,4 +191,9 @@ header .header__nav--flex-container ul {
         padding: 10px;
         width: 100%;
     }
+
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
